@@ -13,7 +13,7 @@ const Hero = ({ language }) => {
   useEffect(() => {
     setSaludo(language !== 'en' ? `Hi, I'm` : 'Hola, soy');
     setDev(language !== 'en' ? "Software developer" : 'Desarrollador de software');
-    setExp(language !== 'en' ? "experienced in C# in .NET Core and Fullstack with MERN." : 'con experiencia en C# en .NET Core y Fullstack con MERN.');
+    setExp(language !== 'en' ? `experienced in C# in .NET Core <br />and Fullstack with MERN.` : `con experiencia en C# en .NET Core <br />y Fullstack con MERN.`);
 
   }, [language])
 
@@ -28,10 +28,11 @@ const Hero = ({ language }) => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {saludo} <span className='text-[#915EFF]'>Roberto</span>
+            {saludo} <span className='text-[#915EFF]'>Roberto <br className='sm:block hidden' />Esquivel Troncoso</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {dev}<br className='sm:block hidden' />{exp}
+            {dev} <br className='sm:block hidden' />
+            <p dangerouslySetInnerHTML={{ __html: exp }}></p>
           </p>
         </div>
       </div>
