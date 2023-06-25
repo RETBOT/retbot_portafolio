@@ -11,8 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-
-src/constants/ENV.js
+src/constants/env_mail.js
 
 # Editor directories and files
 .vscode/*

@@ -24,7 +24,7 @@ const App = () => {
         <Works language={language} />
         <Feedbacks language={language} />
         <div className='relative z-0'>
-          <Contact />
+          <Contact language={language} />
           <StarsCanvas />
         </div>
       </div>

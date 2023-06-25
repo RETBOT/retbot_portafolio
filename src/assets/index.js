@@ -12,14 +12,14 @@ import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import github2 from './github2.png'
+import github2 from './tech/github2.png'
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
-import expressjs from './expressjs.png'
-import python from './python.png'
-import csharp from './csharp.png'
+import expressjs from './tech/expressjs.png'
+import python from './tech/python.png'
+import csharp from './tech/csharp.png'
 import reactjs from "./tech/reactjs.png";
 import reactjs2 from './reactjs.png'
 import redux from "./tech/redux.png";
@@ -44,6 +44,7 @@ import pagina_web_retbot from './pagina_web_retbot.png'
 import curso_django from './curso_django.jpeg';
 import escuela_aspnet from './escuela_aspnet.png'
 import chatdynamix from './chatdynamix.png'
+import retbot_portafolio from './retbot_portafolio.png'
 
 export {
   logo,
@@ -89,4 +90,5 @@ export {
   curso_django,
   escuela_aspnet,
   chatdynamix,
+  retbot_portafolio,
 };

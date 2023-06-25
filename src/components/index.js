@@ -9,6 +9,8 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 
+import { FeedbackForm } from './FeedbackForm';
+import { BasicModal } from './Shared';
 
 export {
   Hero,
@@ -26,4 +28,7 @@ export {
   StarsCanvas,
   ReactLogoCanvas,
   ComputerGamerCanvas,
+
+  FeedbackForm,
+  BasicModal,
 };

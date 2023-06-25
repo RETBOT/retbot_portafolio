@@ -10,9 +10,6 @@ import {
   nodejs,
   mongodb,
   git,
-  carrent,
-  jobit,
-  tripguide,
 
   reactjs2,
   api,
@@ -28,6 +25,8 @@ import {
   curso_django,
   escuela_aspnet,
   chatdynamix,
+  retbot_portafolio,
+
 } from "../assets";
 
 export const navLinksEn = [
@@ -150,7 +149,7 @@ const experiencesEs = [
 const experiencesEn = [
   {
     title: "React.js and C# Asp.net Developer",
-    company_name: "API Real Estate & Advisors Corp.",
+    company_name: "API Inmobiliaría & Asesores S.A. de C.V.",
     icon: api,
     iconBg: "#FFFFFF",
     date: "Jan 2023 - Present",
@@ -162,33 +161,6 @@ const experiencesEn = [
       "Participating in code reviews and providing constructive feedback."
     ],
   }
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
 ];
 
 const projectsEn = [
@@ -288,6 +260,34 @@ const projectsEn = [
     ],
     image: chatdynamix,
     source_code_link: "https://github.com/RETBOT/ChatDynamix",
+  },
+  {
+    name: "Roberto's Portfolio",
+    description: "Portfolio website using Three.js and React.js. Added MongoDB for website comments.",
+    tags: [
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: retbot_portafolio,
+    source_code_link: "https://github.com/RETBOT/retbot_portafolio",
   },
   {
     name: "Practical Django Course",
@@ -411,6 +411,34 @@ const projectsEs = [
     source_code_link: "https://github.com/RETBOT/Pokedex_Api",
   },
   {
+    name: "Portafolio de Roberto",
+    description: "Sitio web de portafolio con Three.js y React.js. Se agregó MongoDB para los comentarios del sitio web.",
+    tags: [
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: retbot_portafolio,
+    source_code_link: "https://github.com/RETBOT/retbot_portafolio",
+  },
+  {
     name: "ChatDynamix",
     description:
       "Es un proyecto de desarrollo de un chat utilizando la tecnología de OpenAI y GPT4All.",
@@ -460,4 +488,4 @@ const projectsEs = [
 ];
 
 
-export { services, technologies, experiencesEs, experiencesEn, testimonials, projectsEn, projectsEs };
+export { services, technologies, experiencesEs, experiencesEn, projectsEn, projectsEs };
