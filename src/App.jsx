@@ -39,7 +39,7 @@ const App = () => {
         </div>
         <About language={language} />
         <Experience language={language} />
-        {!esTelefono ? (<Tech />) : (<></>)}
+        <Tech esTelefono={esTelefono} />
         <Works language={language} esTelefono={esTelefono} />
         <Feedbacks language={language} />
         <div className='relative z-0'>
