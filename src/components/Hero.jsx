@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { pc_gamer_gif } from '../assets'
 import { ComputerGamerCanvas } from "./canvas";
 
-const Hero = ({ language }) => {
+const Hero = ({ language, esTelefono }) => {
   const [saludo, setSaludo] = useState('Hola, soy');
   const [dev, setDev] = useState('Desarrollador de software');
   const [exp, setExp] = useState('con experiencia en C# en .NET Core y Fullstack con MERN.');
@@ -34,25 +35,38 @@ const Hero = ({ language }) => {
         </div>
       </div>
 
-      <ComputerGamerCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
+      {!esTelefono ? (<ComputerGamerCanvas />) :
+        (
+          <div className="relative flex justify-center items-end h-screen">
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+              <img
+                src={pc_gamer_gif}
+                alt="pc gamer"
+                className="w-52 h-auto max-w-xs max-h-xs"
+              />
+            </div>
           </div>
-        </a>
-      </div>
+        )
+      }
+      {!esTelefono ? (
+        <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+          <a href='#about'>
+            <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+              <motion.div
+                animate={{
+                  y: [0, 24, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className='w-3 h-3 rounded-full bg-secondary mb-1'
+              />
+            </div>
+          </a>
+        </div>
+      ) : (<></>)}
     </section>
   );
 };

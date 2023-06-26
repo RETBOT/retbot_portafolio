@@ -46,6 +46,8 @@ import escuela_aspnet from './escuela_aspnet.png'
 import chatdynamix from './chatdynamix.png'
 import retbot_portafolio from './retbot_portafolio.png'
 
+import pc_gamer_gif from './gif/gaming_pc.gif'
+
 export {
   logo,
   backend,
@@ -91,4 +93,5 @@ export {
   escuela_aspnet,
   chatdynamix,
   retbot_portafolio,
+  pc_gamer_gif,
 };
