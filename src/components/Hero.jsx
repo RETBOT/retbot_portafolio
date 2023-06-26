@@ -1,32 +1,12 @@
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputerGamerCanvas, ComputersCanvas } from "./canvas";
+import { ComputerGamerCanvas } from "./canvas";
 
 const Hero = ({ language }) => {
   const [saludo, setSaludo] = useState('Hola, soy');
   const [dev, setDev] = useState('Desarrollador de software');
   const [exp, setExp] = useState('con experiencia en C# en .NET Core y Fullstack con MERN.');
-
-  const [esTelefono, setEsTelefono] = useState(false);
-
-  const verificarTamanioPantalla = () => {
-    const { innerWidth } = window;
-    if (innerWidth <= 768) { // Puedes ajustar este valor según tus necesidades
-      setEsTelefono(true);
-    } else {
-      setEsTelefono(false);
-    }
-  };
-
-  useEffect(() => {
-    verificarTamanioPantalla();
-    window.addEventListener('resize', verificarTamanioPantalla);
-
-    return () => {
-      window.removeEventListener('resize', verificarTamanioPantalla);
-    };
-  }, []);
 
   useEffect(() => {
     setSaludo(language !== 'en' ? `Hi, I'm` : 'Hola, soy');
@@ -49,16 +29,12 @@ const Hero = ({ language }) => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {dev} <br className='sm:block hidden' />
-            <p dangerouslySetInnerHTML={{ __html: exp }}></p>
+            <span dangerouslySetInnerHTML={{ __html: exp }}></span>
           </p>
         </div>
       </div>
 
-      {!esTelefono ? (
-        <ComputerGamerCanvas />
-      ) : (
-        <></>
-      )}
+      <ComputerGamerCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
