@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 src/constants/env_mail.js
+.firebaserc
+firebase.json
+.firebase
 
 # Editor directories and files
 .vscode/*

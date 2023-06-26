@@ -131,34 +131,38 @@ const technologies = [
 
 const experiencesEs = [
   {
-    title: "React.js and C# Asp.net Developer",
-    company_name: "API Inmobiliaría & Asesores S.A. de C.V.",
+    title: "React.js y C# Asp.net Developer",
+    company_name: "API Inmobiliaria & Asesores S.A. de C.V.",
     icon: api,
     iconBg: "#FFFFFF",
     date: "Ene 2023 - Presente",
     points: [
-      "Desarrollando aplicaciones web utilizando React.js y tecnologías relacionadas para crear productos de alta calidad.",
-      "Aplicando mi experiencia en el desarrollo de scrapers para extraer datos de diversas fuentes en línea y automatizar la recopilación de información.",
-      "Colaborando con equipos interfuncionales para asegurar la entrega de soluciones eficientes.",
-      "Implementando diseño receptivo y garantizando la compatibilidad entre navegadores.",
-      "Participando en revisiones de código y proporcionando comentarios constructivos."
-    ],
+      "Desarrollador de software en C# utilizando el patrón de diseño MVC y el framework .NET Core.",
+      "Amplia experiencia en el desarrollo de aplicaciones web y especializado en la creación de scrapers para extraer datos de diversas fuentes en línea y automatizar la recopilación de información.",
+      "Utilización efectiva de tecnologías como HtmlAgilityPack, HTML, JavaScript y CSS para implementar soluciones de scraping y mejorar la eficiencia en la recopilación de datos.",
+      "Colaborador destacado en equipos interfuncionales, asegurando la entrega de soluciones eficientes y de alta calidad.",
+      "Participación activa en revisiones de código y proporcionando comentarios constructivos para mejorar la calidad del software.",
+      "Experiencia en el desarrollo de aplicaciones web utilizando la pila MERN, incluyendo React.js, Express.js, Node.js y MongoDB.",
+      "Participación activa en revisiones de código, brindando comentarios constructivos y mejorando la calidad del software."
+    ]
   }
 ];
 
 const experiencesEn = [
   {
     title: "React.js and C# Asp.net Developer",
-    company_name: "API Inmobiliaría & Asesores S.A. de C.V.",
+    company_name: "API Inmobiliaria & Asesores S.A. de C.V.",
     icon: api,
     iconBg: "#FFFFFF",
     date: "Jan 2023 - Present",
     points: [
-      "Developing web applications using React.js and related technologies to create high-quality products.",
-      "Applying my experience in scraper development to extract data from various online sources and automate information gathering.",
-      "Collaborating with cross-functional teams to ensure efficient solution delivery.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback."
+      "Software developer in C#, utilizing the MVC design pattern and .NET Core framework.",
+      "Extensive experience in web application development, specializing in creating scrapers to extract data from various online sources and automate information collection.",
+      "Effective utilization of technologies like HtmlAgilityPack, HTML, JavaScript, and CSS to implement scraping solutions and enhance data collection efficiency.",
+      "Outstanding collaborator in cross-functional teams, ensuring the delivery of efficient and high-quality solutions.",
+      "Active participation in code reviews and providing constructive feedback to improve software quality.",
+      "Experience in web application development using the MERN stack, including React.js, Express.js, Node.js, and MongoDB.",
+      "Active participation in code reviews, offering constructive feedback and enhancing software quality."
     ],
   }
 ];
