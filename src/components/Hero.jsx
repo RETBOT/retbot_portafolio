@@ -35,14 +35,15 @@ const Hero = ({ language, esTelefono }) => {
         </div>
       </div>
 
-      {!esTelefono ? (<ComputerGamerCanvas />) :
+      {!esTelefono ?
+        (<ComputerGamerCanvas />) :
         (
           <div className="relative flex justify-center items-end h-screen">
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
               <img
                 src={pc_gamer_gif}
                 alt="pc gamer"
-                className="w-52 h-auto max-w-xs max-h-xs"
+                className="w-auto h-auto max-w-xs max-h-xs"
               />
             </div>
           </div>
