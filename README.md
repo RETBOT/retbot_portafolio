@@ -7,6 +7,7 @@
 ¡Bienvenido a mi portafolio en GitHub!
 
 Pagina en linea: https://roberto-esquivel-troncoso.netlify.app/
+o en https://roberto-esquivel-troncoso.web.app/
 
 En este repositorio, encontrarás mi impresionante portafolio de Desarrollador 3D, donde utilizo Three.js y React.js para crear experiencias interactivas y visualmente impactantes.
 
