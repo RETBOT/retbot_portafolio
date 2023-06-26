@@ -2,6 +2,8 @@
 
 ![3D Portafolio](./imgs/retbot_portafolio.png)
 
+https://github.com/RETBOT/retbot_portafolio/assets/71575985/fd968435-2f3f-44c8-91f6-bcc39a01e5b4
+
 ## Introducción
 
 ¡Bienvenido a mi portafolio en GitHub!
