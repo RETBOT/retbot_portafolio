@@ -32,7 +32,7 @@ const TechCard = ({
 };
 
 
-const Tech = (esTelefono) => {
+const Tech = ({esTelefono}) => {
   return (
     <div className='flex flex-row flex-wrap justify-center gap-16'>
       {
