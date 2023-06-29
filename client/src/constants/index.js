@@ -22,6 +22,7 @@ import {
   inno_eyes,
   pokemon_api,
   pagina_web_retbot,
+  web_cv_roberto,
   curso_django,
   escuela_aspnet,
   chatdynamix,
@@ -294,6 +295,30 @@ const projectsEn = [
     source_code_link: "https://github.com/RETBOT/retbot_portafolio",
   },
   {
+    "name": "DevPlayCloud",
+    "description": "Create and test your web projects in a secure and scalable environment using your own Linux server on AWS. Harness the power and flexibility of the cloud to take your development to the next level.",
+    "tags": [
+      {
+        "name": "MongoDB",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Express.js",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "React.js",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Node.js",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": "web_cv_roberto",
+    "source_code_link": "https://github.com/RETBOT/DevPlayCloud"
+  },
+  {
     name: "Practical Django Course",
     description:
       "Practical Django course from GNU/Linux operating systems.",
@@ -454,6 +479,31 @@ const projectsEs = [
     ],
     image: chatdynamix,
     source_code_link: "https://github.com/RETBOT/ChatDynamix",
+  },
+  {
+    name: "DevPlayCloud",
+    description:
+      "Crea y prueba tus proyectos web en un entorno seguro y escalable utilizando tu propio servidor Linux en AWS. Puedes aprovechar la potencia y flexibilidad de la nube para llevar tu desarrollo al siguiente nivel.",
+    tags: [
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: web_cv_roberto,
+    source_code_link: "https://github.com/RETBOT/DevPlayCloud",
   },
   {
     name: "Curso Practico de Django",
