@@ -42,9 +42,10 @@ import inno_eyes from './inno_eyes.png';
 import pokemon_api from './pokemon-api.png';
 import pagina_web_retbot from './pagina_web_retbot.png'
 import curso_django from './curso_django.jpeg';
-import escuela_aspnet from './escuela_aspnet.png'
-import chatdynamix from './chatdynamix.png'
-import retbot_portafolio from './retbot_portafolio.png'
+import escuela_aspnet from './escuela_aspnet.png';
+import chatdynamix from './chatdynamix.png';
+import retbot_portafolio from './retbot_portafolio.png';
+import web_cv_roberto from './web-cv-roberto.png';
 
 import pc_gamer_gif from './gif/gaming_pc.gif'
 
@@ -94,4 +95,5 @@ export {
   chatdynamix,
   retbot_portafolio,
   pc_gamer_gif,
+  web_cv_roberto,
 };
