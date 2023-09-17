@@ -9,6 +9,7 @@ https://github.com/RETBOT/retbot_portafolio/assets/71575985/fd968435-2f3f-44c8-9
 ¡Bienvenido a mi portafolio en GitHub!
 
 Pagina en linea: https://roberto-esquivel-troncoso.web.app/
+
 Mi portafolio actualizado: https://roberto-esquivel-troncoso.netlify.app/
 
 En este repositorio, encontrarás mi impresionante portafolio de Desarrollador 3D, donde utilizo Three.js y React.js para crear experiencias interactivas y visualmente impactantes.
