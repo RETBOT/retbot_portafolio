@@ -33,6 +33,14 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import fullstack from "./fullstack.png";
+import icc from "./icc.png";
+import vb6 from "./tech/Visual_Basic_6.0_logo.png";
+import devexpress from "./tech/devexpress.png";
+import flutter from "./tech/flutter.png";
+import jquery from "./tech/jquery.png";
+import movildev from "./movil-dev.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -48,6 +56,11 @@ import retbot_portafolio from './retbot_portafolio.png';
 import web_cv_roberto from './web-cv-roberto.png';
 
 import pc_gamer_gif from './gif/gaming_pc.gif'
+
+
+import ciudadlaencantada from './ciudadlaencantada.png'
+import propiedadesmexico from './propiedadesmexico.png'
+import operacionescrece from './operaciones_crece.jpeg'
 
 export {
   logo,
@@ -96,4 +109,16 @@ export {
   retbot_portafolio,
   pc_gamer_gif,
   web_cv_roberto,
+
+  fullstack,
+  icc, 
+  vb6, 
+  devexpress, 
+  flutter, 
+  jquery, 
+  movildev,
+
+  ciudadlaencantada,
+  propiedadesmexico,
+  operacionescrece,
 };

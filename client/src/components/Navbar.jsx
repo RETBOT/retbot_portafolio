@@ -32,6 +32,8 @@ const Navbar = ({ language, toggleLanguage }) => {
     setNavLinks(language !== 'en' ? navLinksEn : navLinksEs)
   }, [language])
 
+  
+
   return (
     <nav
       className={`${styles.paddingX
@@ -49,36 +51,38 @@ const Navbar = ({ language, toggleLanguage }) => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Roberto &nbsp;
-            <span className='sm:block hidden'> | Developer Jr</span>
+            Roberto&nbsp;<span className='sm:block hidden'>&nbsp;|&nbsp;Desarrollador Web y Móvil Jr.</span>
           </p>
         </Link>
-
         <ul className='list-none hidden sm:flex flex-row gap-4'>
           {
             navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className={`${active === nav.title ? "text-white" : "text-secondary"
-                  } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(nav.title)}
+                
+                onClick={() => setActive(nav.id)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={`#${nav.id}`} 
+                  className={`${active === nav.id ? "text-selected" : "text-no_selected"
+                  } hover:text-selected text-[18px] font-medium cursor-pointer no-underline`}
+                 >{nav.title}</a>
               </li>
             ))
           }
-
-
-          <li
-            className={`text-secondary hover:text-white text-[18px] font-medium cursor-pointer`}
-          >
-            <button onClick={toggleLanguage}>
-              {language !== 'en' ? 'English' : 'Español'}
-            </button>
+          <li>
+             <a
+                href='#idioma'
+                role="button"
+                className={`text-no_selected hover:text-selected text-[18px] font-medium cursor-pointer no-underline`}
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  toggleLanguage();
+                }}
+              >
+                {language !== 'en' ? 'English' : 'Español'}
+              </a>
           </li>
         </ul>
-
-
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
@@ -93,25 +97,30 @@ const Navbar = ({ language, toggleLanguage }) => {
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
-                    }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
+                 <li
+                 key={nav.id}
+                 
+                 onClick={() => setActive(nav.id)}
+               >
+                 <a href={`#${nav.id}`} 
+                   className={`${active === nav.id ? "text-selected" : "text-no_selected"
+                   } hover:text-selected text-[18px] font-medium cursor-pointer no-underline`}
+                  >{nav.title}</a>
+               </li>
               ))}
-              <li
-                className={`text-secondary hover:text-white text-[18px] font-medium cursor-pointer`}
-              >
-                <button onClick={toggleLanguage}>
+              <li>
+                <a
+                    href='#idioma'
+                    role="button"
+                    className={`text-no_selected hover:text-selected text-[18px] font-medium cursor-pointer no-underline`}
+                    onClick={(e) => {
+                      e.preventDefault(); 
+                      toggleLanguage();
+                    }}
+                  >
                   {language !== 'en' ? 'English' : 'Español'}
-                </button>
-              </li>
+                </a>
+          </li>
             </ul>
           </div>
         </div>

@@ -33,19 +33,16 @@ const About = ({ language }) => {
   const [titulo, setTitulo] = useState('Introducción');
   const [subTitulo, setSubTitulo] = useState('Descripción general')
   const [descripcion, setDescripcion] =
-    useState(`Soy un desarrollador de software con experiencia en C#, MVC y .NET Core.
-  Me especializo en el desarrollo de aplicaciones web y la creación de scrapers.
-  Utilizo herramientas como HtmlAgilityPack, JavaScript y CSS para extraer y automatizar
-  la recopilación de datos en línea.
-  También tengo conocimientos en la pila MERN, incluyendo React.js, Express.js, Node.js y MongoDB.
-  Estoy emocionado por aplicar mis habilidades en desafiantes proyectos de desarrollo de software.
-  ¡Trabajemos juntos para hacer realidad tus ideas!`);
+    useState(`Soy un ingeniero en sistemas computacionales con amplia experiencia en desarrollo web y móvil. Me especializo en tecnologías como C#, .NET Core, MERN (React.js, Express.js, Node.js, MongoDB), Flutter, jQuery con DevExpress, Visual Basic 6 y SQL Server. He trabajado en una variedad de proyectos desafiantes de desarrollo de software y estoy entusiasmado por aplicar mis habilidades para crear soluciones innovadoras. ¡Estoy listo para trabajar contigo en tu próximo proyecto!`);
 
 
   useEffect(() => {
     setTitulo(language !== 'en' ? 'Introduction' : 'Introducción');
     setSubTitulo(language !== 'en' ? 'Overview' : 'Descripción general');
-    setDescripcion(language !== 'en' ? `I'm a software developer with expertise in C#, MVC, and .NET Core. My specialization lies in web application development and creating scrapers. I leverage tools like HtmlAgilityPack, JavaScript, and CSS to extract and automate data collection from online sources. I have also expanded my skills to the MERN stack, including React.js, Express.js, Node.js, and MongoDB. I'm excited to apply my abilities to challenging software development projects. Let's work together to bring your ideas to life!` : `Soy un desarrollador de software con experiencia en C#, MVC y .NET Core. Me especializo en el desarrollo de aplicaciones web y la creación de scrapers. Utilizo herramientas como HtmlAgilityPack, JavaScript y CSS para extraer y automatizar la recopilación de datos en línea. También tengo conocimientos en la pila MERN, incluyendo React.js, Express.js, Node.js y MongoDB. Estoy emocionado por aplicar mis habilidades en desafiantes proyectos de desarrollo de software. ¡Trabajemos juntos para hacer realidad tus ideas!`)
+    setDescripcion(language !== 'en' 
+    ? `I am a computer systems engineer with extensive experience in web and mobile development. I specialize in technologies such as C#, .NET Core, MERN (React.js, Express.js, Node.js, MongoDB), Flutter, jQuery with DevExpress, Visual Basic 6, and SQL Server. I have worked on a variety of challenging software development projects and am excited to apply my skills to create innovative solutions. I am ready to work with you on your next project!` 
+    : `Soy un ingeniero en sistemas computacionales con amplia experiencia en desarrollo web y móvil. Me especializo en tecnologías como C#, .NET Core, MERN (React.js, Express.js, Node.js, MongoDB), Flutter, jQuery con DevExpress, Visual Basic 6 y SQL Server. He trabajado en una variedad de proyectos desafiantes de desarrollo de software y estoy entusiasmado por aplicar mis habilidades para crear soluciones innovadoras. ¡Estoy listo para trabajar contigo en tu próximo proyecto!`
+    )
   }, [language]);
 
 

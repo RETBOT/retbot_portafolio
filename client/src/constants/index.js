@@ -1,23 +1,16 @@
 import {
-  backend,
   creator,
   web,
   javascript,
   html,
   css,
   reactjs,
-  scss,
   nodejs,
   mongodb,
-  git,
-
-  reactjs2,
   api,
   csharp,
-  expressjs,
+  github,
   github2,
-  python,
-
   compiladorCsharp,
   inno_eyes,
   pokemon_api,
@@ -27,6 +20,17 @@ import {
   escuela_aspnet,
   chatdynamix,
   retbot_portafolio,
+
+  fullstack,
+  icc, 
+  vb6, 
+  devexpress, 
+  flutter, 
+  jquery, 
+  movildev,
+  ciudadlaencantada,
+  propiedadesmexico,
+  operacionescrece,
 
 } from "../assets";
 
@@ -66,12 +70,12 @@ const services = [
     icon: web,
   },
   {
-    title: "Frontend Developer",
-    icon: reactjs2,
+    title: "FullStack Developer",
+    icon: fullstack,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Mobile Developer",
+    icon: movildev,
   },
   {
     title: "Content Creator",
@@ -101,8 +105,8 @@ const technologies = [
     icon: csharp,
   },
   {
-    name: "Scss CSS",
-    icon: scss,
+    name: "DevExpress",
+    icon: devexpress,
   },
   {
     name: "Node JS",
@@ -113,30 +117,43 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Express js",
-    icon: expressjs,
+    name: "JQuery",
+    icon: jquery,
   },
   {
-    name: "git",
-    icon: git,
+    name: "flutter",
+    icon: flutter,
   },
   {
     name: "github",
     icon: github2,
   },
   {
-    name: "python",
-    icon: python,
+    name: "vb6",
+    icon: vb6,
   },
 ];
 
 const experiencesEs = [
   {
+    title: "Desarrollador web y móvil jr.",
+    company_name: "Ingeniería Computacional Creativa S.A de C.V.",
+    icon: icc,
+    iconBg: "#FFFFFF",
+    date: "Oct 2023 - Presente",
+    points: [
+      "Desarrollo de aplicaciones móviles con Flutter para plataformas Android e iOS.",
+      "Actualización de sitios web utilizando jQuery, HTML, CSS y DevExpress.",
+      "Modificación y soporte de programas existentes en Visual Basic 6.",
+      "Gestión de APIs desarrolladas en Visual Basic 6 y SQL Server para aplicaciones móviles y web.",
+    ]
+  },
+  {
     title: "React.js y C# Asp.net Developer",
     company_name: "API Inmobiliaria & Asesores S.A. de C.V.",
     icon: api,
     iconBg: "#FFFFFF",
-    date: "Ene 2023 - Presente",
+    date: "Ene 2023 - Oct 2023",
     points: [
       "Desarrollador de software en C# utilizando el patrón de diseño MVC y el framework .NET Core.",
       "Amplia experiencia en el desarrollo de aplicaciones web y especializado en la creación de scrapers para extraer datos de diversas fuentes en línea y automatizar la recopilación de información.",
@@ -151,11 +168,24 @@ const experiencesEs = [
 
 const experiencesEn = [
   {
+    title:  "Jr. web and mobile developer",
+    company_name: "Ingeniería Computacional Creativa S.A de C.V.",
+    icon: icc,
+    iconBg: "#FFFFFF",
+    date: "Oct 2023 - Present",
+    points: [
+      "Developing mobile applications with Flutter for Android and iOS platforms.",
+      "Updating websites using jQuery, HTML, CSS, and DevExpress.",
+      "Modifying and providing support for existing programs in Visual Basic 6.",
+      "Managing APIs developed in Visual Basic 6 and SQL Server for mobile and web applications.",
+    ],
+  },
+  {
     title: "React.js and C# Asp.net Developer",
     company_name: "API Inmobiliaria & Asesores S.A. de C.V.",
     icon: api,
     iconBg: "#FFFFFF",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - Oct 2023",
     points: [
       "Software developer in C#, utilizing the MVC design pattern and .NET Core framework.",
       "Extensive experience in web application development, specializing in creating scrapers to extract data from various online sources and automate information collection.",
@@ -170,6 +200,60 @@ const experiencesEn = [
 
 const projectsEn = [
   {
+    name: "Crece Operations",
+    description:
+      "Mobile application created for the company 'Crece con Vales,' used for the financial management of coordinators.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VB6",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: operacionescrece,
+    icon: icc,
+    source_code_link: "https://apps.apple.com/us/app/operaciones-crece/id6476694787",
+  },
+  {
+    name: "Propiedades México",
+    description:
+      "During my employment at Api Inmobiliaria, I established the foundations of the Propiedades México website.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+    ],
+    image: propiedadesmexico,
+    icon: api,
+    source_code_link: "https://www.propiedadesmexico.com/",
+  },
+  {
+    name: "Ciudad La Encantada",
+    description:
+      "During my employment at Api Inmobiliaria, I was responsible for providing support, maintenance, and website improvements",
+    tags: [
+      {
+        name: "React.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ciudadlaencantada,
+    icon: api,
+    source_code_link: "https://ciudadlaencantada.com/",
+  },
+  {
     name: "C# Compiler",
     description:
       "Final project for Automatas 2 course.",
@@ -180,6 +264,7 @@ const projectsEn = [
       },
     ],
     image: compiladorCsharp,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Compilador",
   },
   {
@@ -197,6 +282,7 @@ const projectsEn = [
       },
     ],
     image: inno_eyes,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Inno_Eyes",
   },
   {
@@ -222,6 +308,7 @@ const projectsEn = [
       },
     ],
     image: pagina_web_retbot,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Web-Stack-MERN",
   },
   {
@@ -251,6 +338,7 @@ const projectsEn = [
       }
     ],
     image: pokemon_api,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Pokedex_Api",
   },
   {
@@ -264,6 +352,7 @@ const projectsEn = [
       },
     ],
     image: chatdynamix,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/ChatDynamix",
   },
   {
@@ -292,31 +381,33 @@ const projectsEn = [
       },
     ],
     image: retbot_portafolio,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/retbot_portafolio",
   },
   {
-    "name": "DevPlayCloud",
-    "description": "Create and test your web projects in a secure and scalable environment using your own Linux server on AWS. Harness the power and flexibility of the cloud to take your development to the next level.",
-    "tags": [
+    name: "DevPlayCloud",
+    description: "Create and test your web projects in a secure and scalable environment using your own Linux server on AWS. Harness the power and flexibility of the cloud to take your development to the next level.",
+    tags: [
       {
-        "name": "MongoDB",
-        "color": "green-text-gradient"
+        name: "MongoDB",
+        color: "green-text-gradient"
       },
       {
-        "name": "Express.js",
-        "color": "blue-text-gradient"
+        name: "Express.js",
+        color: "blue-text-gradient"
       },
       {
-        "name": "React.js",
-        "color": "green-text-gradient"
+        name: "React.js",
+        color: "green-text-gradient"
       },
       {
-        "name": "Node.js",
-        "color": "pink-text-gradient"
+        name: "Node.js",
+        color: "pink-text-gradient"
       }
     ],
-    "image": "web_cv_roberto",
-    "source_code_link": "https://github.com/RETBOT/DevPlayCloud"
+    image: "web_cv_roberto",
+    icon: github, 
+    source_code_link: "https://github.com/RETBOT/DevPlayCloud"
   },
   {
     name: "Practical Django Course",
@@ -333,6 +424,7 @@ const projectsEn = [
       },
     ],
     image: curso_django,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Django-X-Linux",
   },
   {
@@ -350,11 +442,66 @@ const projectsEn = [
       },
     ],
     image: escuela_aspnet,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Escuela",
   },
 ];
 
 const projectsEs = [
+  {
+    name: "Operaciones Crece",
+    description:
+      "Aplicación móvil creada para la empresa Crece con Vales, utilizada para la gestión financiera de los coordinadores.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VB6",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: operacionescrece,
+    icon: icc,
+    source_code_link: "https://apps.apple.com/us/app/operaciones-crece/id6476694787",
+  },
+  {
+    name: "Propiedades México",
+    description:
+      "Durante mi empleo en Api Inmobiliaria, establecí las bases de la página web de Propiedades México.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+    ],
+    image: propiedadesmexico,
+    icon: api,
+    source_code_link: "https://www.propiedadesmexico.com/",
+  },
+  {
+    name: "Ciudad La Encantada",
+    description:
+      "Durante mi empleo en la empresa Api Inmobiliaria, me encargué del soporte, mantenimiento y mejoras en la página.",
+    tags: [
+      {
+        name: "React.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ciudadlaencantada,
+    icon: api,
+    source_code_link: "https://ciudadlaencantada.com/",
+  },
   {
     name: "Compilador en C#",
     description:
@@ -366,6 +513,7 @@ const projectsEs = [
       },
     ],
     image: compiladorCsharp,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Compilador",
   },
   {
@@ -383,6 +531,7 @@ const projectsEs = [
       },
     ],
     image: inno_eyes,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Inno_Eyes",
   },
   {
@@ -408,6 +557,7 @@ const projectsEs = [
       },
     ],
     image: pagina_web_retbot,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Web-Stack-MERN",
   },
   {
@@ -437,6 +587,7 @@ const projectsEs = [
       }
     ],
     image: pokemon_api,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Pokedex_Api",
   },
   {
@@ -465,6 +616,7 @@ const projectsEs = [
       },
     ],
     image: retbot_portafolio,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/retbot_portafolio",
   },
   {
@@ -478,6 +630,7 @@ const projectsEs = [
       },
     ],
     image: chatdynamix,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/ChatDynamix",
   },
   {
@@ -503,6 +656,7 @@ const projectsEs = [
       },
     ],
     image: web_cv_roberto,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/DevPlayCloud",
   },
   {
@@ -520,6 +674,7 @@ const projectsEs = [
       },
     ],
     image: curso_django,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Django-X-Linux",
   },
   {
@@ -537,6 +692,7 @@ const projectsEs = [
       },
     ],
     image: escuela_aspnet,
+    icon: github, 
     source_code_link: "https://github.com/RETBOT/Escuela",
   },
 ];

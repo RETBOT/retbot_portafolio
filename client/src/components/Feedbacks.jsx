@@ -44,16 +44,10 @@ const FeedbackCard = ({
     return stars;
   };
 
-  const [usuario, setUsuario] = useState('Usuario');
-  const [comments, setComments] = useState('Comentario');
   const [star, setStar] = useState('estrellas');
-  const [date, setDate] = useState('Fecha');
 
   useEffect(() => {
-    setUsuario(language !== 'en' ? 'User' : 'Usuario');
-    setComments(language !== 'en' ? 'Comment' : 'Comentario');
     setStar(language !== 'en' ? 'stars' : 'estrellas');
-    setDate(language !== 'en' ? 'Date' : 'Fecha');
   }, [language]);
 
   const formattedDate = (fecha) => fecha.split('T')[0];
@@ -62,17 +56,17 @@ const FeedbackCard = ({
     if (url && nombre) {
       return (
         <a href={url} target="_blank" rel="noopener noreferrer" className="text-white font-bold">
-          {usuario + ': ' + nombre}
+          {nombre}
         </a>
       );
     } else {
-      return <p className="text-white font-bold">{usuario + ': ' + nombre}</p>;
+      return <p className="text-white font-bold">{nombre}</p>;
     }
   };
 
   return (
     <div className="bg-tertiary p-6 rounded-lg shadow-lg">
-      <p className="text-white text-lg font-semibold mb-4">{comments + ': ' + comentario}</p>
+      <p className="text-white text-lg font-semibold mb-4">{comentario}</p>
 
       <div className="flex items-center">
         {fotoUrl && (
@@ -100,7 +94,7 @@ const FeedbackCard = ({
       </div>
 
       <p className="text-gray-400 text-sm mt-2">
-        {date + ': ' + formattedDate(fecha)}
+        {formattedDate(fecha)}
       </p>
     </div>
   );

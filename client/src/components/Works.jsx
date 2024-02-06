@@ -14,6 +14,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  icon,
   source_code_link,
 }) => {
   return (
@@ -39,7 +40,7 @@ const ProjectCard = ({
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
+                src={icon}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
@@ -73,6 +74,7 @@ const ProjectCardTelf = ({
   description,
   tags,
   image,
+  icon,
   source_code_link,
 }) => {
   return (
@@ -98,7 +100,7 @@ const ProjectCardTelf = ({
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
+                src={icon}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
