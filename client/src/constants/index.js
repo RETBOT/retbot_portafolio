@@ -1,6 +1,6 @@
 import {
   creator,
-  web,
+  app_escritorio,
   javascript,
   html,
   css,
@@ -23,6 +23,7 @@ import {
 
   fullstack,
   icc, 
+  novapak,
   vb6, 
   devexpress, 
   flutter, 
@@ -31,6 +32,9 @@ import {
   ciudadlaencantada,
   propiedadesmexico,
   operacionescrece,
+  distribuidorascrece,
+  nunashoes,
+  novapakordenes,
 
 } from "../assets";
 
@@ -66,8 +70,8 @@ export const navLinksEs = [
 
 const services = [
   {
-    title: "C# ASP.NET Developer",
-    icon: web,
+    title: "Desktop Developer",
+    icon: app_escritorio,
   },
   {
     title: "FullStack Developer",
@@ -136,11 +140,24 @@ const technologies = [
 
 const experiencesEs = [
   {
+    title: "Desarrollador de Software",
+    company_name: "Novapak Sistemas S.A de C.V.",
+    icon: novapak,
+    iconBg: "#FFFFFF",
+    date: "Jul 2024 - Presente",
+    points: [
+      "Desarrollo y personalización de aplicaciones empresariales utilizando GeneXus, integradas en un sistema ERP con DominioM BI. ",
+      "Creación, mejoras y publicación de aplicaciones móviles multiplataforma con Xamarin y Flutter, incluyendo mejoras y publicación de NovaPak Ordenes. ",
+      "Desarrollo de aplicaciones web y APIs RESTful usando .NET, asegurando escalabilidad y rendimiento óptimo. ",
+      "Manejo avanzado de SQL Server para diseño de bases de datos, optimización de consultas y gestión de datos.",
+    ]
+  },
+  {
     title: "Desarrollador web y móvil jr.",
     company_name: "Ingeniería Computacional Creativa S.A de C.V.",
     icon: icc,
     iconBg: "#FFFFFF",
-    date: "Oct 2023 - Presente",
+    date: "Oct 2023 - Jul 2024",
     points: [
       "Desarrollo de aplicaciones móviles con Flutter para plataformas Android e iOS.",
       "Actualización de sitios web utilizando jQuery, HTML, CSS y DevExpress.",
@@ -167,6 +184,19 @@ const experiencesEs = [
 ];
 
 const experiencesEn = [
+  {
+    title: "Software Developer",
+    company_name: "Novapak Sistemas S.A de C.V.",
+    icon: novapak,
+    iconBg: "#FFFFFF",
+    date: "Jul 2024 - Presente",
+    points: [
+      "Development and customization of enterprise applications using GeneXus, integrated into an ERP system with DominioM BI.",
+      "Creation, enhancement, and deployment of cross-platform mobile applications with Xamarin and Flutter, including improvements and deployment of NovaPak Orders.",
+      "Development of web applications and RESTful APIs using .NET, ensuring scalability and optimal performance.",
+      "Advanced management of SQL Server for database design, query optimization, and data management.",
+    ]
+  },
   {
     title:  "Jr. web and mobile developer",
     company_name: "Ingeniería Computacional Creativa S.A de C.V.",
@@ -200,9 +230,53 @@ const experiencesEn = [
 
 const projectsEn = [
   {
-    name: "Crece Operations",
+    name: "Novapak Ordenes",
     description:
-      "Mobile application created for the company 'Crece con Vales,' used for the financial management of coordinators.",
+      "The app allows you to quickly approve or reject purchase orders from anywhere. With an intuitive interface, it streamlines the approval process and improves the team's workflow.",
+    tags: [
+      {
+        name: "Xamarin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ASP.NET",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: novapakordenes,
+    icon: novapak,
+    source_code_link: "https://apps.apple.com/us/app/novapak-ordenes/id6578461919?platform=iphone",
+  },
+  {
+    name: "Nuna Shoes",
+    description:
+      "Nuna Shoes is a mobile app designed to efficiently manage customer registration, issue vouchers, and track their purchase history. Simplify the management of your store and provide a unique experience to your customers directly from your mobile.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VB6",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nunashoes,
+    icon: icc,
+    source_code_link: "https://apps.apple.com/mx/app/nuna-shoes/id6479618794",
+  },
+  {
+    name: "Operaciones Crece",
+    description:
+      "A mobile app for financial management of coordinators at Crece con Vales, developed by me at ICCreativa. Features: efficient portfolio management, support for commercial goals, intuitive and secure interface.",
     tags: [
       {
         name: "Flutter",
@@ -219,13 +293,32 @@ const projectsEn = [
     ],
     image: operacionescrece,
     icon: icc,
-    source_code_link: "https://apps.apple.com/us/app/operaciones-crece/id6476694787",
+    source_code_link: "https://apps.apple.com/mx/app/operaciones-crece/id6476694787",
+  },
+  {
+    name: "Distribuidoras Crece",
+    description: "Mobile app for financial management of distributors in Crece con Vales.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VB6",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: distribuidorascrece,
+    icon: icc,
+    source_code_link: "https://apps.apple.com/mx/app/crece-con-vales/id6476695062"
   },
   {
     name: "Propiedades México",
-    description:
-      "During my employment at Api Inmobiliaria, I established the foundations of the Propiedades México website.",
-    tags: [
+    description: "At Api Inmobiliaria, I had the opportunity to lay the initial foundations of the Propiedades México website, a project that involved designing the main structure and implementing key functionalities. This work was crucial for the subsequent development and modification of the site, contributing to its evolution and success in the market.",    tags: [
       {
         name: "Next.js",
         color: "pink-text-gradient",
@@ -241,8 +334,7 @@ const projectsEn = [
   },
   {
     name: "Ciudad La Encantada",
-    description:
-      "During my employment at Api Inmobiliaria, I was responsible for providing support, maintenance, and website improvements",
+    description: "At Api Inmobiliaria, I was responsible for the support, maintenance, and improvements on the website for the Ciudad la Encantada project.",    
     tags: [
       {
         name: "React.js",
@@ -342,20 +434,6 @@ const projectsEn = [
     source_code_link: "https://github.com/RETBOT/Pokedex_Api",
   },
   {
-    name: "ChatDynamix",
-    description:
-      "A chat project using OpenAI and GPT4All technology.",
-    tags: [
-      {
-        name: "Python",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: chatdynamix,
-    icon: github, 
-    source_code_link: "https://github.com/RETBOT/ChatDynamix",
-  },
-  {
     name: "Roberto's Portfolio",
     description: "Portfolio website using Three.js and React.js. Added MongoDB for website comments.",
     tags: [
@@ -385,6 +463,20 @@ const projectsEn = [
     source_code_link: "https://github.com/RETBOT/retbot_portafolio",
   },
   {
+    name: "ChatDynamix",
+    description:
+      "A chat project using OpenAI and GPT4All technology.",
+    tags: [
+      {
+        name: "Python",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chatdynamix,
+    icon: github, 
+    source_code_link: "https://github.com/RETBOT/ChatDynamix",
+  },
+  {
     name: "DevPlayCloud",
     description: "Create and test your web projects in a secure and scalable environment using your own Linux server on AWS. Harness the power and flexibility of the cloud to take your development to the next level.",
     tags: [
@@ -405,7 +497,7 @@ const projectsEn = [
         color: "pink-text-gradient"
       }
     ],
-    image: "web_cv_roberto",
+    image: web_cv_roberto,
     icon: github, 
     source_code_link: "https://github.com/RETBOT/DevPlayCloud"
   },
@@ -449,9 +541,53 @@ const projectsEn = [
 
 const projectsEs = [
   {
+    name: "Novapak Ordenes",
+    description:
+      "La app permite autorizar o rechazar órdenes de compra de manera rápida y eficiente, desde cualquier lugar. Con una interfaz intuitiva, optimiza el proceso de aprobación y mejora el flujo de trabajo del equipo.",
+    tags: [
+      {
+        name: "Xamarin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ASP.NET",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: novapakordenes,
+    icon: novapak,
+    source_code_link: "https://apps.apple.com/us/app/novapak-ordenes/id6578461919?platform=iphone",
+  },
+  {
+    name: "Nuna Shoes",
+    description:
+      "Nuna Shoes es una app móvil diseñada para gestionar de manera eficiente el registro de clientes, la emisión de vales y el seguimiento detallado de su historial de compras. Simplifica la administración de tu tienda y ofrece una experiencia única a tus clientes directamente desde tu móvil.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VB6",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nunashoes,
+    icon: icc,
+    source_code_link: "https://apps.apple.com/mx/app/nuna-shoes/id6479618794",
+  },
+  {
     name: "Operaciones Crece",
     description:
-      "Aplicación móvil creada para la empresa Crece con Vales, utilizada para la gestión financiera de los coordinadores.",
+      "App móvil para la gestión financiera de coordinadores en Crece con Vales, desarrollada por mí en ICCreativa. Ofrece: gestión eficiente de cartera, apoyo para metas comerciales, interfaz intuitiva y segura.",
     tags: [
       {
         name: "Flutter",
@@ -468,12 +604,34 @@ const projectsEs = [
     ],
     image: operacionescrece,
     icon: icc,
-    source_code_link: "https://apps.apple.com/us/app/operaciones-crece/id6476694787",
+    source_code_link: "https://apps.apple.com/mx/app/operaciones-crece/id6476694787",
+  },
+  {
+    name: "Distribuidoras Crece",
+    description:
+      "App móvil para la gestión financiera de distribuidoras en Crece con Vales.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQL Server",
+        color: "green-text-gradient",
+      },
+      {
+        name: "VB6",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: distribuidorascrece,
+    icon: icc,
+    source_code_link: "https://apps.apple.com/mx/app/crece-con-vales/id6476695062",
   },
   {
     name: "Propiedades México",
     description:
-      "Durante mi empleo en Api Inmobiliaria, establecí las bases de la página web de Propiedades México.",
+    "En Api Inmobiliaria, tuve la oportunidad de sentar las bases iniciales de la página web de Propiedades México, un proyecto que implicó el diseño de la estructura principal y la implementación de funcionalidades clave. Esta labor fue fundamental para el posterior desarrollo y modificación del sitio, contribuyendo así a su evolución y éxito en el mercado.",
     tags: [
       {
         name: "Next.js",
@@ -491,7 +649,7 @@ const projectsEs = [
   {
     name: "Ciudad La Encantada",
     description:
-      "Durante mi empleo en la empresa Api Inmobiliaria, me encargué del soporte, mantenimiento y mejoras en la página.",
+      "En Api Inmobiliaria, estuve a cargo del soporte, mantenimiento y mejoras en la página web del proyecto Ciudad la Encantada.",
     tags: [
       {
         name: "React.js",

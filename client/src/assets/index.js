@@ -2,11 +2,12 @@ import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
-import web from "./web.png";
+import app_escritorio from "./app_escritorio.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import api from './api.jpeg'
+import novapak from './novapak.png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -61,13 +62,16 @@ import pc_gamer_gif from './gif/gaming_pc.gif'
 import ciudadlaencantada from './ciudadlaencantada.png'
 import propiedadesmexico from './propiedadesmexico.png'
 import operacionescrece from './operaciones_crece.jpeg'
+import distribuidorascrece from './distribuidoras_crece.png'
+import nunashoes from './nuna_shoes.png'
+import novapakordenes from './novapak_ordenes.png'
 
 export {
   logo,
   backend,
   creator,
   mobile,
-  web,
+  app_escritorio,
   github,
   menu,
   close,
@@ -121,4 +125,9 @@ export {
   ciudadlaencantada,
   propiedadesmexico,
   operacionescrece,
+
+  novapak,
+  distribuidorascrece,
+  nunashoes,
+  novapakordenes,
 };

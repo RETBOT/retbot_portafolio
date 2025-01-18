@@ -3,11 +3,11 @@ import { styles } from "../styles"
 
 const Hero = ({ language, esTelefono }) => {
   const [saludo, setSaludo] = useState('Hola, soy');
-  const [dev, setDev] = useState('Desarrollador web y móvil jr.');
+  const [dev, setDev] = useState('Desarrollador de Software ');
 
   useEffect(() => {
     setSaludo(language !== 'en' ? `Hi, I'm` : 'Hola, soy');
-    setDev(language !== 'en' ? "Jr web and mobile developer." : 'Desarrollador web y móvil jr.');
+    setDev(language !== 'en' ? "Software Developer." : 'Desarrollador de Software.');
   }, [language])
 
   return (

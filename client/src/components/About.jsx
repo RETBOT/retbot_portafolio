@@ -33,19 +33,17 @@ const About = ({ language }) => {
   const [titulo, setTitulo] = useState('Introducción');
   const [subTitulo, setSubTitulo] = useState('Descripción general')
   const [descripcion, setDescripcion] =
-    useState(`Soy un ingeniero en sistemas computacionales con amplia experiencia en desarrollo web y móvil. Me especializo en tecnologías como C#, .NET Core, MERN (React.js, Express.js, Node.js, MongoDB), Flutter, jQuery con DevExpress, Visual Basic 6 y SQL Server. He trabajado en una variedad de proyectos desafiantes de desarrollo de software y estoy entusiasmado por aplicar mis habilidades para crear soluciones innovadoras. ¡Estoy listo para trabajar contigo en tu próximo proyecto!`);
-
-
+    useState(`Ingeniero en Sistemas Computacionales con sólida experiencia en el desarrollo de aplicaciones empresariales, web y móviles. He trabajado extensivamente con tecnologías como GeneXus, .NET (C# y .NET Core), Xamarin, Flutter, MERN Stack (React.js, Express.js, Node.js, MongoDB), jQuery con DevExpress, Visual Basic 6 y SQL Server. Apasionado por la programación y la resolución de problemas complejos, disfruto enfrentando nuevos retos y aprendiendo tecnologías emergentes. En mi puesto actual, desarrollo y personalizo soluciones ERP con GeneXus, además de crear APIs y aplicaciones web robustas utilizando .NET, enfocándome en rendimiento, escalabilidad y excelencia técnica. Comprometido con la mejora continua, la colaboración en equipo y la entrega de soluciones innovadoras, mi enfoque es aportar valor estratégico mediante el desarrollo de software de alto impacto.`)
   useEffect(() => {
     setTitulo(language !== 'en' ? 'Introduction' : 'Introducción');
     setSubTitulo(language !== 'en' ? 'Overview' : 'Descripción general');
     setDescripcion(language !== 'en' 
-    ? `I am a computer systems engineer with extensive experience in web and mobile development. I specialize in technologies such as C#, .NET Core, MERN (React.js, Express.js, Node.js, MongoDB), Flutter, jQuery with DevExpress, Visual Basic 6, and SQL Server. I have worked on a variety of challenging software development projects and am excited to apply my skills to create innovative solutions. I am ready to work with you on your next project!` 
-    : `Soy un ingeniero en sistemas computacionales con amplia experiencia en desarrollo web y móvil. Me especializo en tecnologías como C#, .NET Core, MERN (React.js, Express.js, Node.js, MongoDB), Flutter, jQuery con DevExpress, Visual Basic 6 y SQL Server. He trabajado en una variedad de proyectos desafiantes de desarrollo de software y estoy entusiasmado por aplicar mis habilidades para crear soluciones innovadoras. ¡Estoy listo para trabajar contigo en tu próximo proyecto!`
+    ? `Computer Systems Engineer with extensive experience in developing enterprise, web, and mobile applications. I have worked extensively with technologies such as GeneXus, .NET (C# and .NET Core), Xamarin, Flutter, MERN Stack (React.js, Express.js, Node.js, MongoDB), jQuery with DevExpress, Visual Basic 6, and SQL Server. Passionate about programming and solving complex problems, I enjoy tackling new challenges and learning emerging technologies. In my current role, I develop and customize ERP solutions with GeneXus, as well as create robust APIs and web applications using .NET, focusing on performance, scalability, and technical excellence. Committed to continuous improvement, teamwork, and delivering innovative solutions, my goal is to add strategic value through the development of high-impact software.` 
+    : `Ingeniero en Sistemas Computacionales con sólida experiencia en el desarrollo de aplicaciones empresariales, web y móviles. He trabajado extensivamente con tecnologías como GeneXus, .NET (C# y .NET Core), Xamarin, Flutter, MERN Stack (React.js, Express.js, Node.js, MongoDB), jQuery con DevExpress, Visual Basic 6 y SQL Server. Apasionado por la programación y la resolución de problemas complejos, disfruto enfrentando nuevos retos y aprendiendo tecnologías emergentes. En mi puesto actual, desarrollo y personalizo soluciones ERP con GeneXus, además de crear APIs y aplicaciones web robustas utilizando .NET, enfocándome en rendimiento, escalabilidad y excelencia técnica. Comprometido con la mejora continua, la colaboración en equipo y la entrega de soluciones innovadoras, mi enfoque es aportar valor estratégico mediante el desarrollo de software de alto impacto.`
     )
   }, [language]);
 
-
+  
 
   return (
     <>

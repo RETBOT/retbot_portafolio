@@ -10,6 +10,7 @@ import { Comment } from "../api/comentario";
 import { FeedbackForm } from './FeedbackForm'
 import { BasicModal } from './Shared'
 
+
 const commentController = new Comment();
 
 const FeedbackCard = ({
@@ -159,15 +160,15 @@ const Feedbacks = ({ language }) => {
     <>
       <div className={`mt-12 bg-black-100 rounded-[20px]`}>
         <div
-          className={`bg-tertiary rounded-2xl ${styles.padding2} min-h-[300px]`}
+          className={`bg-tertiary rounded-2xl ${styles.padding2} `}
         >
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>{titulo}</p>
             <h2 className={styles.sectionHeadText}>{subTitulo}.</h2>
           </motion.div>
-          <div className="flex justify-end" style={{ color: "#ffffff" }}>
+          <div className="flex justify-end pt-5" style={{ color: "#ffffff" }}>
             <Button
-              className="bg-violet-500 text-white px-4 py-2 rounded-lg"
+              className="bg-violet-500 text-white px-4 py-2 rounded-lg "
               style={{ fontSize: '16px', fontWeight: 'bold', color: "#151030" }}
               onClick={onOpenCloseModal}
             >
@@ -175,14 +176,51 @@ const Feedbacks = ({ language }) => {
             </Button>
           </div>
         </div>
-        <div className={`mt-20 ${styles.padding2} grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center`}>
-          {comments.map((comment, index) => (
-            <div className="flex justify-center">
-              <div className="w-full max-w-xs">
-                <FeedbackCard key={comment._id} index={index} language={language} {...comment} />
+        <div className={` ${styles.padding2} grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center`}>
+          { comments.length === 0 ? 
+              (
+                <>
+                    <div role="status" className="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700">
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                        <span className="sr-only">Loading...</span>
+                    </div>
+                    <div role="status" className="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700">
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                        <span className="sr-only">Loading...</span>
+                    </div>
+                    <div role="status" className="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700">
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                        <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                        <span className="sr-only">Loading...</span>
+                    </div>
+                </>
+              ) : 
+            (comments.map((comment, index) => (
+              <div className="flex justify-center">
+                <div className="w-full max-w-xs">
+                  <FeedbackCard key={comment._id} index={index} language={language} {...comment} />
+                </div>
               </div>
-            </div>
-          ))}
+            )))
+          }
+
         </div>
 
         {(paginacion?.page <= paginacion?.pages && comments.length > 3) ? (<div className="flex justify-end px-4	py-4" style={{ color: "#ffffff" }}>

@@ -17,7 +17,7 @@ const TechCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-full sm:w-[360px] w-full '
+        className='bg-white p-5 rounded-full sm:w-[360px] w-full '
       >
         <div className='relative w-full h-[230px]'>
           <img

@@ -51,7 +51,7 @@ const Navbar = ({ language, toggleLanguage }) => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Roberto&nbsp;<span className='sm:block hidden'>&nbsp;|&nbsp;Desarrollador Web y Móvil Jr.</span>
+            Roberto&nbsp;<span className='sm:block hidden'>&nbsp;|&nbsp;Software Developer.</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-4'>
